@@ -4,6 +4,7 @@ createApp({
   data() {
     return {
       quote: null,
+      loading: true,
       api_base_url: "https://api.adviceslip.com/advice",
     };
   },
@@ -12,8 +13,8 @@ createApp({
       axios
         .get(url)
         .then((response) => {
-          console.log(response.data.slip.advice);
           this.quote = response.data.slip.advice;
+          this.loading = false;
         })
         .catch((error) => {
           console.log(error.message);

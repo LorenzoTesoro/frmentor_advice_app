@@ -22,7 +22,10 @@
         <div class="card">
           <div class="card_header">advice #117</div>
           <!-- /.card_header -->
-          <div class="quote">"{{quote}}"</div>
+          <div class="quote">
+            <div v-if="loading === true">Loading...</div>
+            "{{quote}}"
+          </div>
           <!-- /.quote -->
           <div class="divider">
             <picture>
@@ -44,6 +47,8 @@
       </main>
       <!-- /#site_main -->
     </div>
+
+    <!-- TODO: LOADING BAR -->
 
     <!-- axios cdn -->
     <script
