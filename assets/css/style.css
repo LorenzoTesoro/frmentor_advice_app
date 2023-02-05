@@ -7,11 +7,11 @@
 
 :root {
   /* colors */
-  --clr-card-bg: hsl(193, 38%, 86%);
+  --clr-card-bg: hsl(217, 19%, 24%);
   --clr-primary-success: hsl(150, 100%, 66%);
-  --clr-text: hsl(217, 19%, 38%);
-  --clr-dark: hsl(217, 19%, 24%);
+  --clr-grayish: hsl(217, 19%, 38%);
   --clr-darker: hsl(218, 23%, 16%);
+  --clr-text: hsl(193, 38%, 86%);
 
   /* font family */
   --ff: "Manrope", sans-serif;
@@ -21,6 +21,7 @@
 
 body {
   font-family: var(--ff);
+  background-color: var(--clr-darker);
 }
 
 .quote {
@@ -28,3 +29,24 @@ body {
   font-size: 1.75rem;
 }
 /* #endregion common rules */
+
+/* #region main */
+#app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-inline: 1rem;
+}
+main {
+  flex-grow: 3;
+}
+.card {
+  background-color: var(--clr-card-bg);
+  border-radius: 0.25rem;
+  text-align: center;
+}
+.card_header {
+  color: var(--clr-primary-success);
+  text-transform: uppercase;
+}
+/* #endregion main */
