@@ -22,9 +22,22 @@
         <div class="card">
           <div class="card_header">advice #117</div>
           <!-- /.card_header -->
-          <div class="quote">{{quote}}</div>
+          <div class="quote">"{{quote}}"</div>
           <!-- /.quote -->
-          <div class="cta"></div>
+          <div class="divider">
+            <picture>
+              <source
+                media="(min-width: 970px)"
+                srcset="././assets/images/pattern-divider-desktop.svg"
+              />
+              <img src="./assets/images/pattern-divider-mobile.svg" alt="" />
+            </picture>
+          </div>
+          <div class="cta">
+            <button @click="getRandomAdvice(api_base_url)">
+              <img src="./assets/images/icon-dice.svg" alt="" />
+            </button>
+          </div>
           <!-- /.cta -->
         </div>
         <!-- /.card -->

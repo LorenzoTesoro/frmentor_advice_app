@@ -22,31 +22,57 @@
 body {
   font-family: var(--ff);
   background-color: var(--clr-darker);
-}
-
-.quote {
-  font-weight: var(--fw-lg);
-  font-size: 1.75rem;
+  min-height: 100vh;
 }
 /* #endregion common rules */
 
 /* #region main */
-#app {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  padding-inline: 1rem;
-}
+
 main {
-  flex-grow: 3;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
 }
 .card {
   background-color: var(--clr-card-bg);
-  border-radius: 0.25rem;
+  border-radius: 0.675rem;
   text-align: center;
+  max-width: 560px;
 }
 .card_header {
   color: var(--clr-primary-success);
   text-transform: uppercase;
+  padding: 2rem 0 2rem 0;
+  letter-spacing: 0.25rem;
+  font-size: 0.875rem;
+}
+.quote {
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  font-weight: var(--fw-lg);
+  font-size: 1.75rem;
+  color: var(--clr-text);
+}
+.divider {
+  padding: 2rem 0 2rem 0;
+}
+
+.cta button {
+  width: 70px;
+  background-color: var(--clr-primary-success);
+  aspect-ratio: 1;
+  border: none;
+  border-radius: 100%;
+  position: relative;
+  bottom: -2rem;
 }
 /* #endregion main */
+
+/* hover effects */
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 50px 12px var(--clr-primary-success);
+  transition-duration: 0.2s;
+}
