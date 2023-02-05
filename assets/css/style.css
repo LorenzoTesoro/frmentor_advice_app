@@ -1,0 +1,30 @@
+/* #region common rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --clr-card-bg: hsl(193, 38%, 86%);
+  --clr-primary-success: hsl(150, 100%, 66%);
+  --clr-text: hsl(217, 19%, 38%);
+  --clr-dark: hsl(217, 19%, 24%);
+  --clr-darker: hsl(218, 23%, 16%);
+
+  /* font family */
+  --ff: "Manrope", sans-serif;
+  /* font weight */
+  --fw-lg: 800;
+}
+
+body {
+  font-family: var(--ff);
+}
+
+.quote {
+  font-weight: var(--fw-lg);
+  font-size: 1.75rem;
+}
+/* #endregion common rules */
